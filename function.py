@@ -98,21 +98,21 @@ from os import makedirs
 # print(dsort(lst))
 
 
-Str1 = 'Desserts'
-Str2 = "Live" 
-Str3 = 'Pals'
-Str4 = 'God'
-Str5 = 'Raw'
-lst = []
-lst_1 = [ ]
+# Str1 = 'Desserts'
+# Str2 = "Live" 
+# Str3 = 'Pals'
+# Str4 = 'God'
+# Str5 = 'Raw'
+# lst = []
+# lst_1 = [ ]
 
-def str_rev(Str1):
-    lst = list(Str1)
-    return lst
+# def str_rev(Str1):
+#     lst = list(Str1)
+#     return lst
 
 
-    # for i in lst:
-    #     a = lst.remove()
-    #     a = lst_1.append()
+#     # for i in lst:
+#     #     a = lst.remove()
+#     #     a = lst_1.append()
     
-print(str_rev(Str1))
+# print(str_rev(Str1))

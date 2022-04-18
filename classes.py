@@ -32,25 +32,48 @@
 
 
 
-from pickle import FALSE
 
 
-class Progammer():
-    def __init__(self , name) :
-        self.Name = name
-
-    def get_lang(self , lang):
-        self.lang = lang
-
-def python_progmer(lst):
-        if 'python' in lst:
-            print(True)
-        else:
-            print(False)
-
-obj = Progammer("Hrithik")
-obj.get_lang(['python' ,'c'])
-python_progmer(obj.lang)
 
 
-print(obj.lang)
+# class Progammer():
+#     def __init__(self , name) :
+#         self.Name = name
+
+#     def get_lang(self , lang):
+#         self.lang = lang
+
+# def python_progmer(lst):
+#         if 'python' in lst:
+#             print(True)
+#         else:
+#             print(False)
+
+# obj = Progammer("Hrithik")
+# obj.get_lang(['python' ,'c'])
+# python_progmer(obj.lang)
+
+
+# print(obj.lang)
+
+# class Numeric_str():
+#     def __init__(self , str=" "):
+#         self.str = str
+    
+
+# num =Numeric_str("2024")
+# pro = int(num.str)*2
+# print(num.str)
+# print(pro)
+
+# class SumPair ():
+#     def __init__(self , lst):
+#         self.List = lst
+#         self.List_len = len(lst)
+
+#     # def __iter__(self):
+#     #     return self
+
+# obj = SumPair([12,34,5,67,89,12])
+# print(obj.List)
+
