@@ -45,13 +45,13 @@
 # print(obj1.len_list)
 
 
-class LenVal ():
-    def __init__( ):
-       pass
-    def sho_val(self , lst ):
-        self.List = lst
-        self.len_list = len(self.List)
-        return self.len_list
-obj1 = LenVal()
-print(obj1.sho_val([1,9,4,2,6]))
+# class LenVal ():
+#     def __init__( ):
+#        pass
+#     def sho_val(self , lst ):
+#         self.List = lst
+#         self.len_list = len(self.List)
+#         return self.len_list
+# obj1 = LenVal()
+# print(obj1.sho_val([1,9,4,2,6]))
 
