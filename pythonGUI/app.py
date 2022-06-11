@@ -2,6 +2,8 @@ from tkinter import *
 # from random import randint
 from random import choice
 
+from matplotlib.pyplot import pink
+
 # Normal Random Generator app
 
 # App = Tk() #this class used to create a window
@@ -46,20 +48,23 @@ from random import choice
 
 App =Tk()
 App.title('Element picker')
-App.geometry('350x100')
+App.geometry('350x200')
+App['background'] = 'pink'
 
-inp = Entry(App)#this method used to create a entry/input field
-inp.grid(column=0,row=0,columnspan=1,padx=35,pady=15)
+inp = Entry(App,background='grey',foreground='black')#this method used to create a entry/input field
+inp.grid(column=0,row=0,columnspan=2,padx=35,pady=15)
 
 def pick():
     INP = inp.get().split(',') #this method used to get the value of entry
-    msg = Label(App, text=choice(INP))
-    msg.grid(column=0,row=2,padx=35,pady=15)
+    msg = Label(App, text=choice(INP), font=('Courier',12,'bold'),background='white',foreground='yellow')
+    msg.grid(column=0,row=2,padx=45,columnspan=2,pady=5)
+    if Bexit['state']== DISABLED: #this method used to disable button
+        Bexit['state']=NORMAL #this method used to enable button
   
-B = Button(App, text='pick', command=pick)
+B = Button(App, text='pick', command=pick,background='white',foreground='black')
 B.grid(column=0,row=1,padx=35,pady=15)
 
-Bexit = Button(App, text='exit', command=App.destroy)
+Bexit = Button(App, text='exit', command=App.destroy, state=DISABLED,background='red',foreground='black')
 Bexit.grid(column=1,row=1,padx=35,pady=15)
 
 App.mainloop()
