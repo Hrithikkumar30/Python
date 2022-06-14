@@ -1,6 +1,6 @@
 from tkinter import *
 # from random import randint
-from random import choice
+from random import choice , sample
 
 from matplotlib.pyplot import pink
 
@@ -54,10 +54,23 @@ App['background'] = 'pink'
 inp = Entry(App,background='grey',foreground='black')#this method used to create a entry/input field
 inp.grid(column=0,row=0,columnspan=2,padx=35,pady=15)
 
+no_choice = IntVar()
+chk = Checkbutton(App, text="Check box",variable=no_choice , onvalue=2, offvalue=1)
+chk.deselect() #deselect checkbox
+chk.grid(column=0,row=2,padx=35,pady=15)
+
+
 def pick():
     INP = inp.get().split(',') #this method used to get the value of entry
-    msg = Label(App, text=choice(INP), font=('Courier',12,'bold'),background='white',foreground='yellow')
-    msg.grid(column=0,row=2,padx=45,columnspan=2,pady=5)
+
+    if no_choice.get() == 2:
+        chois = 'Choice: ' + str(sample(INP ,2))
+    else:
+        chois = 'Choice: ' + str(choice(INP))
+
+
+    msg = Label(App, text=chois, width=20, font=('Courier',12,'bold'),background='white',foreground='yellow')
+    msg.grid(column=0,row=3,padx=45,columnspan=2,pady=5)
     if Bexit['state']== DISABLED: #this method used to disable button
         Bexit['state']=NORMAL #this method used to enable button
   
