@@ -59,3 +59,5 @@ for i in range (1,4):
 
 finalArr = np.array(THreeDarr)
 print(finalArr)
+
+
