@@ -11,36 +11,51 @@ import numpy as np
 
 #concatinate array
 
-arr =  np.array(
-    [1,2,3]
-)
-Arr = arr+5
+# arr =  np.array(
+#     [1,2,3]
+# )
+# Arr = arr+5
 
-print(Arr) 
-
-
-arr_1 =  np.array([[[1,2,3],[4,5,6]],[[1,2,3],[4,5,6]]])
-print(arr_1[0,1,2]) #print the value of the third element of the second row of the first column
-print(arr_1)
-
-arr1 = np.array([[1, 2], [3, 4]])
-
-arr2 = np.array([[5, 6], [7, 8]])
-
-arr = np.concatenate((arr1, arr2), axis=1)
-
-# print(arr)
-    
-print(arr1+arr2)
+# print(Arr) 
 
 
-ar = np.array([[[1,2,3], [4,5,6]],
-                [[1,2,3] ,[4,5,6]],
-                [[1,2,3],[4,5,6]],
+# arr_1 =  np.array([[[1,2,3],[4,5,6]],[[1,2,3],[4,5,6]]])
+# print(arr_1[0,1,2]) #print the value of the third element of the second row of the first column
+# print(arr_1)
 
-                [1,2,3],
-                [2,3,4],
-                [4,5,6]])
+# arr1 = np.array([[1, 2], [3, 4]])
+
+# arr2 = np.array([[5, 6], [7, 8]])
+
+# arr = np.concatenate((arr1, arr2), axis=1)
+
+# # print(arr)
+
+# print(arr1+arr2)
+
+
+# ar = np.array([[[1,2,3], [4,5,6]],
+#                 [[1,2,3] ,[4,5,6]],
+#                 [[1,2,3],[4,5,6]],
+
+#                 [1,2,3],
+#                 [2,3,4],
+#                 [4,5,6]])
                 
 
-print(ar)
+# print(ar)
+
+
+ 
+
+
+THreeDarr = []
+
+for i in range (1,4):
+    twodAr = []
+    for j in range (1,4):
+        twodAr.append([i,j])
+    THreeDarr.append(twodAr)
+
+finalArr = np.array(THreeDarr)
+print(finalArr)
