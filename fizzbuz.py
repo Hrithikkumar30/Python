@@ -10,8 +10,8 @@ def FizzBuzz(n:int) -> list :
     
 # n = int(input('enter any number'))
 
+    arr =[]
     for i in range(1,n+1):
-        arr =[]
         if i %3==0 and i % 5==0:
             arr.append('FizzBuzz')
             continue
@@ -27,4 +27,6 @@ def FizzBuzz(n:int) -> list :
     return arr
 
 for n in [3,5,15]:
+    
     print(f"FizzBuzz(n={n}) = {FizzBuzz(n)}")
+
