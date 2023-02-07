@@ -1,0 +1,14 @@
+{
+    "name" : "Hritk kumar",
+    "age" : 20,
+    "secretIdenity": "Hsehrtik",
+    "Powers" : ["Sleeping","Eating"],
+    "Mesaage" : "Hello World",
+    "actions": [
+        {
+            "name": "Vikki Don Don vikki",
+            "Link": "merekokya.com"
+        }
+    ]
+
+}
